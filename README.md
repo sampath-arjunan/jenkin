@@ -1,4 +1,4 @@
-# sfdx-jenkins-package
+# sfdx-jenkins-package sample
 
 For a fully guided walkthrough of setting up and configuring continuous integration using scratch orgs and Salesforce CLI, see the [Continuous Integration Using Salesforce DX](https://trailhead.salesforce.com/modules/sfdx_travis_ci) Trailhead module.
 
