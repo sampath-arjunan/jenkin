@@ -3,6 +3,9 @@
 import groovy.json.JsonSlurperClassic
 
 node {
+    
+    def BUILD_NUMBER=env.BUILD_NUMBER
+    def RUN_ARTIFACT_DIR="tests/${BUILD_NUMBER}"
 
     def SF_CONSUMER_KEY=env.SF_CONSUMER_KEY
     def SF_USERNAME=env.SF_USERNAME
@@ -11,7 +14,12 @@ node {
     def PACKAGE_NAME='0Ho5j0000010wGaCAI'
     def PACKAGE_VERSION
     def SF_INSTANCE_URL = env.SF_INSTANCE_URL ?: "https://login.salesforce.com"
-
+    
+    println 'KEY IS' 
+    println SF_CONSUMER_KEY
+    println SF_USERNAME
+    println SERVER_KEY_CREDENTALS_ID
+    println CONNECTED_APP_CONSUMER_KEY
     def toolbelt = tool 'toolbelt'
 
 
