@@ -19,7 +19,6 @@ node {
     println SF_CONSUMER_KEY
     println SF_USERNAME
     println SERVER_KEY_CREDENTALS_ID
-    println CONNECTED_APP_CONSUMER_KEY
     def toolbelt = tool 'toolbelt'
 
 
